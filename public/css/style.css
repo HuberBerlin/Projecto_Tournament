@@ -1,0 +1,83 @@
+html, body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  overflow: hidden!important;
+  background-image:url('/images/bk-s1.jpg') 
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav input {
+  background: transparent;
+  border: none;
+}
+
+.error-msg {
+  background-color: rgb(255, 172, 172);
+}
+
+/* img {
+  width: 100%;
+} */
+#discord{
+  height: auto;
+  width: 300px;
+  float: left;
+}
+
+.george{
+ background-image:url('/images/george.jpg')  ;
+ background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: 255px center;
+  height: 500px;
+  padding: 200px;
+}
+
+.signUp{
+  padding: 5%;
+  width: 300px;
+  background: #000;
+  color: #fff;
+  height: auto;
+  margin: 10% auto;
+}
+.logIn{
+  padding: 5%;
+  width: 300px;
+  background: #000;
+  color: #fff;
+  height: auto;
+  margin: 10% auto;
+}
+
+.blockTop {
+  height: 100%;
+  max-height: 890px;
+  /* background-color: #000; */
+background-image:  url('/images/dos_Duo.png'),url('/images/discord.png') ;
+background-repeat: no-repeat;
+background-position:111% top , -7px 50%;
+background-size: auto 90%, 55px auto;
+overflow: hidden!important;
+/* 
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+align-content: space-between; */
+
+}
+
+
+.TorneoLogo{
+  background: url('/images/logo_torneo.png') no-repeat center top ;
+  background-size: 374px;
+  height: 30px;
+  width: 446px;
+  float: left;
+  margin: 9% 10% 10% 7%;
+  padding-top: 352px;
+}
