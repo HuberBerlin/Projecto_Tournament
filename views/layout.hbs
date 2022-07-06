@@ -8,7 +8,10 @@
   {{!-- <title>{{title}}</title> --}}
 
   <link rel="stylesheet" href="/css/style.css" />
+
     <link rel="stylesheet" href="/css/material.css" />
+    <script src="https://kit.fontawesome.com/43cf76255a.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -23,11 +26,14 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="/">Home</a>
-        <a class="mdl-navigation__link" href="/sign-up">Sign Up</a>
-        <a class="mdl-navigation__link" href="/log-in">Log In</a>
+        <a class="mdl-navigation__link" href="/"><i class="fa-discord"></i>Home</a>
+     
         <a class="mdl-navigation__link" href="/profile">My Profile</a>
         <a class="mdl-navigation__link" href="/private">My Tournament</a>
+           <a class="mdl-navigation__link" href="/sign-up">Sign Up</a>
+        <a class="mdl-navigation__link btn-cta-freequote" href="/log-in">
+        <i class="fa fa-user"></i></i>Log In
+        <i class="fa fa-arrow-right"></i></a>
         
               <form action="/log-out" method="POST">
                 <input type="submit" class="nav-link" value="Log out">
@@ -39,20 +45,22 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-  <span class="mdl-layout-title"><a href="/"><img src="/images/logo.png" alt="" height="21px"></a></span>
+  {{!-- <span class="mdl-layout-title"><a href="/"><img src="/images/logo.png" alt="" height="21px"></a></span> --}}
     <nav class="mdl-navigation">
    <a class="mdl-navigation__link" href="/">Home</a>
-        <a class="mdl-navigation__link" href="/sign-up">Sign Up</a>
-        <a class="mdl-navigation__link" href="/log-in">Log In</a>
+    
         <a class="mdl-navigation__link" href="/profile">My Profile</a>
         <a class="mdl-navigation__link" href="/private">My Tournament</a>
+            <a class="mdl-navigation__link" href="/sign-up">Sign Up</a>
+        <a class="mdl-navigation__link" href="/log-in">Log In</a>
     </nav>
   </div>
-  <main class="mdl-layout__content">
+  <main class="mdl-layout__content dudes">
     <div class="page-content"><!-- Your content goes here -->
       {{{body}}}
     </div>
   </main>
+  {{!-- <footer class="fot">COpy right</footer> --}}
 </div>
 {{!-- {{> NavBar }} --}}
 
@@ -61,11 +69,11 @@
 
 
 
-
+{{!-- 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> --}}
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <script src="/js/script.js"></script>
   <script src="/js/material.js"></script>

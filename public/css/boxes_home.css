@@ -1,0 +1,84 @@
+
+.box {
+	background-color: red;
+	color: white;
+	height: 50vh; 
+	border: 10px solid black;
+	font-size: 50px;
+	display: flex;
+	justify-content:  flex-start;
+	align-items: flex-start;
+    align-content: center;
+	flex: 1;
+	transition-duration: 1s;
+	background-position: center;
+	background-size: cover;	
+	animation: cardEntrance 700ms ease-out;
+}
+
+.box:hover {
+	/* background-color: blue; */
+	flex: 3;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	/* this is how you define a variable in css */
+	--stagger-delay: 100ms;
+}
+
+.box:nth-of-type(1) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	/* this is how you use a variable */
+	animation-delay: calc(1 * var(--stagger-delay));
+}
+.box:nth-of-type(2) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(2 * var(--stagger-delay));
+}
+.box:nth-of-type(3) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(3 * var(--stagger-delay));
+}
+.box:nth-of-type(4) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(4 * var(--stagger-delay));
+}
+.box:nth-of-type(5) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(5 * var(--stagger-delay));
+}
+
+@keyframes cardEntrance {
+	from {
+		opacity: 0;
+		transform: scale(0.0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}  
+
+/* these are media queries */
+@media (max-width: 480px) {
+	.container {
+		flex-direction: column;
+	}
+	.box {
+		width: 80vw;
+	}
+}
+
+/* this is how to define a range */
+@media (min-width: 320px) and (max-width: 480px) {
+	.container {
+		flex-direction: column;
+	}
+	.box {
+		width: 80vw;
+		color: red;
+	}
+}

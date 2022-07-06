@@ -1,9 +1,11 @@
-html, body {
+html,
+body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  height: 100%;
+  height: 100vh;
   overflow: hidden!important;
   background-image:url('/images/bk-s1.jpg') 
 }
+.page-content{height: 100vh;}
 
 a {
   color: #00B7FF;
@@ -53,14 +55,15 @@ nav input {
   margin: 10% auto;
 }
 
+
 .blockTop {
-  height: 100%;
-  max-height: 890px;
+  height: 100vh;
+ 
   /* background-color: #000; */
 background-image:  url('/images/dos_Duo.png'),url('/images/discord.png') ;
 background-repeat: no-repeat;
-background-position:111% top , -7px 50%;
-background-size: auto 90%, 55px auto;
+background-position:115% bottom , -7px 50%;
+background-size: auto 100%, 55px auto;
 overflow: hidden!important;
 /* 
 display: flex;
@@ -81,3 +84,79 @@ align-content: space-between; */
   margin: 9% 10% 10% 7%;
   padding-top: 352px;
 }
+.flex-containerP{
+  display:-webkit-flex;
+  display:flex;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -webkit-align-items:center;
+  align-items:center;
+  -webkit-align-content:center;
+  align-content:center;
+  }
+
+
+
+
+  
+
+
+.fot{background: rgb(16, 16, 16); height: auto; padding: 20px; border-top: 2px solid rgb(148, 0, 54);
+color: #FFF;}
+
+
+
+
+.flex-container-Home {
+
+  display: flex;
+  
+  justify-content: flex-start; 
+  align-items: center; 
+  /* flex-flow: row nowrap; */ 
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+  align-content: center;
+
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+}
+.flex-container {
+
+  display: flex;
+  
+  justify-content: flex-start; 
+  align-items: center; 
+  /* flex-flow: column nowrap; */ 
+  flex-direction: column; 
+  flex-wrap: nowrap; 
+  align-content: center;
+
+  background-color: #bbdefb;
+  height: 100%;
+  padding: 15px;
+  gap: 5px;
+
+}
+
+.flex-container > div{
+  background: #ffecb3;
+  border: 3px solid #ffcc80;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+
+.item1 { 
+  /* flex:1 1 auto; */
+  flex-grow:1;
+}
+    
+.item2 { 
+  /* flex:1 1 auto; */
+  flex-grow:1;
+}
+    
