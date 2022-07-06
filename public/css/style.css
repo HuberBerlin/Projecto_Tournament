@@ -15,7 +15,7 @@ nav input {
 }
 
 .error-msg {
-  background-color: black;
+  background-color: rgb(255, 0, 0);
 }
 
 /* img {
