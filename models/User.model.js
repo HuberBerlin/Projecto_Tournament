@@ -7,10 +7,10 @@ const userSchema = new Schema({
     trim: true,
     required: [true, 'Username is required.'],
   },
-  playerName: {
-    type: String,
-    required: [true, 'Your name is required.'],
-  },
+  // playerName: {
+  //   type: String,
+  //   required: [true, 'Your name is required.'],
+  // },
   password: {
     type: String,
     required: [true, 'Password is required.']
