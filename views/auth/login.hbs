@@ -5,16 +5,18 @@
             {{!-- <h1 class="">Log in</h1> --}}
 
             <form action="/log-in" method="POST">
-                <div class="">
+                <div class="fields">
                     <label for="username" class="form-label">Username</label>
                     <input type="text" class="form-control" id="username" name="username">
                 </div>
-
-                <div class="">
+                
+            <br>
+                
+                <div class="fields">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password">
                 </div>
-
+            <br>
                 {{#if errorMessage}}
                 <div class="error-msg ">
                     {{errorMessage}}

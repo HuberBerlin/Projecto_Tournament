@@ -11,18 +11,18 @@ router.get("/sign-up", isLoggedOut, (req, res) => {
     res.render("auth/signup")
 })
 
-router.post("/sign-up", isLoggedOut, (req, res) => {
+router.post("/signup", isLoggedOut, (req, res) => {
 
-    const { username, password: plainPassword } = req.body
+    const { username, playerName, userEmail, password: plainPassword } = req.body
 
-    if(username.length === 0 || plainPassword.length === 0) {
+    if( !userName || !userEmail || !playerName || !password) {
         res.render('auth/signup', { errorMessage: 'Please fill in all required fields' })
         return
     }
 
     User
-        .findOne({ username: username })
-        .select({ username: 1 })
+        .findOne({ userName: username })
+        .select({ userName: 1 })
         .then(usernameDB => {
             if(usernameDB)
             res.render('auth/signup', { errorMessage: 'Username already exist, try another one' })

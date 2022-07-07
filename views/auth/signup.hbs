@@ -7,25 +7,33 @@
             <form action="/sign-up" method="POST">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" placeholder="provide us a nickname">
+                    <input type="text" class="form-control" id="username" name="userName" placeholder="create a nickname">
                 </div>
-
+<br>
                 <div class="mb-3">
                     <label for="playerName" class="form-label">Player name</label>
                     <input type="text" class="form-control" id="playerName" name="playerName" placeholder="write your name">
                 </div>
-
+<br>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="userEmail" name="userEmail" placeholder="write your email address">
+                </div>
+<br>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password">
+                    <input type="password" class="form-control" id="password" name="password" >
                 </div>
-                
+                <br>
                 {{#if errorMessage}}
+        
                 <div class="error-msg mb-3">
                     {{errorMessage}}
                 </div>
                 {{/if}}
-
+        
+<br>
+<br>
                 <button type="submit" class="btn btn-outline-dark">Sign in</button>
             </form>
         </div>

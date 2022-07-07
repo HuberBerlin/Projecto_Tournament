@@ -17,7 +17,10 @@ nav input {
 }
 
 .error-msg {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0, 0.3);
+  font-size: small;
+  font-style: italic;
+  text-align: center;
 }
 
 /* img {
@@ -41,20 +44,46 @@ nav input {
 .signUp{
   padding: 5%;
   width: 300px;
-  background: #000;
-  color: #fff;
-  height: auto;
-  margin: 10% auto;
-}
-.logIn{
-  padding: 5%;
-  width: 300px;
-  background: #000;
+  /* background: #000; */
   color: #fff;
   height: auto;
   margin: 10% auto;
 }
 
+.logIn{
+  padding: 5%;
+  width: 300px;
+  /* background: rgb(32, 31, 79, 0.3); */
+  color: #fff;
+  height: auto;
+  margin: 10% auto;
+}
+
+.container.signUp > form {
+  display: flex;
+  justify-content: center;
+}
+
+.logIN > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#username.form-control {
+  width: 100%;
+}
+
+#playerName.form-control {
+  width: 100%;
+}
+
+#userEmail.form-control {
+  width: 100%;
+}
+
+#password.form-control {
+  width: 100%;
+}
 
 .blockTop {
   height: 100vh;
@@ -94,7 +123,9 @@ align-content: space-between; */
   -webkit-align-content:center;
   align-content:center;
   }
-
+.flex-container > div {
+  width: fit-content;
+}
 
 
 
@@ -142,12 +173,6 @@ color: #FFF;}
 
 }
 
-.flex-container > div{
-  background: #ffecb3;
-  border: 3px solid #ffcc80;
-  border-radius: 5px;
-  padding: 8px;
-}
 
 
 .item1 { 
