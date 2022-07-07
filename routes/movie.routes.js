@@ -2,9 +2,9 @@
 
 const express = require('express');
 const router = express.Router();
-const { isLoggedIn, isLoggedOut } = require("../middleware/session-guard");
+
 // GET route to display the form to create a new movie
-router.get('/movies/create',isLoggedIn, (req, res) => res.render('movie-views/movie-create'));
+router.get('/movies/create', (req, res) => res.render('movie-views/movie-create'));
 
 // **** require Movie model in order to use it ****
 const Movie = require('../models/Movie.model');
@@ -25,7 +25,7 @@ router.post('/movies/create', fileUploader.single('movie-cover-image'), (req, re
    
 
 // GET route to display all the movies
-router.get('/movies', isLoggedIn, (req, res) => {
+router.get('/movies', (req, res) => {
     Movie.find()
       .then(moviesFromDB => {
         // console.log(moviesFromDB);
