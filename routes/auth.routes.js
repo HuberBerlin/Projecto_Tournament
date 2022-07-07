@@ -90,4 +90,14 @@ router.get('/private', isLoggedIn, (req, res) => {
     res.render('private')
 })
 
+router.get('/movies', isLoggedIn, (req, res) => {
+    res.render('movies')
+})
+
+router.get('/movies/create', isLoggedIn, (req, res) => {
+    res.render('movies/create')
+})
+
+
+
 module.exports = router
