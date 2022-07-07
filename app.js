@@ -22,6 +22,14 @@ app.locals.title = `${capitalized(projectName)}`;
 const index = require('./routes/index');
 app.use('/', index);
 
+
+// movieRouter needs to be added so paste the following lines:
+const movieRouter = require('./routes/movie.routes'); // <== has to be added
+app.use('/', movieRouter); // <== has to be added
+// ...
+
+
+
 require('./error-handling')(app);
 
 module.exports = app;
